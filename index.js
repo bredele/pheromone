@@ -14,6 +14,6 @@
  */
 
 module.exports = function(before, delta, decay) {
-	decay = decay || 0.1;
+  decay = decay || 0.1;
   return (1 - decay) * before + decay * delta;
 };
